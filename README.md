@@ -1,5 +1,5 @@
 # Chrome webview bug 2
-Nasty bug in Chrome apps. Add this folder as an extension to reproduce.
+Nasty bug in Chrome apps. Add this folder as a Chrome app to reproduce.
 
 ![Screenshot](http://pakastin.fi/bug.png)
 
