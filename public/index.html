@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Chrome webview bug</title>
+    <style>
+      webview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #webview {
+        animation: animate 8s linear infinite;
+      }
+      #webview2 {
+        animation: animate 4s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          transform: translate(100%, 0);
+        }
+        25% {
+          transform: translate(0, 0);
+        }
+        75% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-100%, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <webview id="webview" src="http://www.google.com/nexus" allowtransparency="on"></webview>
+    <webview id="webview2" src="http://www.google.com/chrome" allowtransparency="on"></webview>
+    <script src="inject.js"></script>
+  </body>
+</html>
